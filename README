@@ -1,24 +1,20 @@
 To start, in the terminal, enter:
-[code]
-django-admin.py startproject mysite
-[/code]
+`django-admin.py startproject mysite`
 
 This creates a directory that will have a few functions - manage the web server for development and 
 direct the URL to the app.
 
 To create the physical app, in the terminal, enter:
-[code]
-python manage.py startapp hello
-[/code]
+`python manage.py startapp hello`
 
 This will create another director. 
-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 Files to change:
 
 urls.py:
 
-[code]
+`
 from django.conf.urls.defaults import *
  
 from hello.views import hello
@@ -27,7 +23,7 @@ urlpatterns = patterns('',
 ('^hello/$', hello)
  
 )
-[/code]
+`
 
 What this really means -> ('^hello/$', hello)
 
@@ -36,13 +32,14 @@ example - http://www.yoursite.com/hello
 
 hello - This is the name of the method that will be called inside of view.py
 
-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+
 
 hello/view.py:
 
 
-[code]
-# Create your views here.
+
+`# Create your views here.
 #sends information back to Tropo
 from django.http import HttpResponse  
 #This will allow you to call Tropo functions
@@ -63,15 +60,14 @@ def hello(request):
   json = t.RenderJson(json) 
   #This sends the JSON to Tropo
   return HttpResponse(json)
-[/code]
+`
 
 This is the app that gets runs. Notice that the method name is hello, the same as the method call in urls.py.
-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 To start the development web-server, in the terminal (make sure that you are in the mysite directory), enter:
-[code]
-python manage.pt runserver
-[/code]
+`python manage.pt runserver`
+
 
 
   

@@ -1,5 +1,5 @@
 To start, in the terminal, enter:
-**strong django-admin.py startproject mysite**
+__strong django-admin.py startproject mysite__
 
 
 This creates a directory that will have a few functions - manage the web server for development and 

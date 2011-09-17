@@ -1,5 +1,8 @@
 To start, in the terminal, enter:
-<code>django-admin.py startproject mysite</code>
+
+```python
+django-admin.py startproject mysite
+```
 
 This creates a directory that will have a few functions - manage the web server for development and 
 direct the URL to the app.
@@ -14,20 +17,20 @@ Files to change:
 
 urls.py:
 
-`
-from django.conf.urls.defaults import *
+
+`from django.conf.urls.defaults import *
  
 from hello.views import hello
 
 urlpatterns = patterns('',
 ('^hello/$', hello)
  
-)
-`
+)`
+
 
 What this really means -> ('^hello/$', hello)
 
-'^hello/$' - This will be apart of the url to access the app.
+`'^hello/$'` - This will be apart of the url to access the app.
 example - http://www.yoursite.com/hello
 
 hello - This is the name of the method that will be called inside of view.py
@@ -59,14 +62,15 @@ def hello(request):
   #This renders the reply into JSON so Tropo can read it
   json = t.RenderJson(json) 
   #This sends the JSON to Tropo
-  return HttpResponse(json)
-`
+  return HttpResponse(json)`
 
 This is the app that gets runs. Notice that the method name is hello, the same as the method call in urls.py.
 -----------------------------------------------------------------------------------------------------------------------
 
 To start the development web-server, in the terminal (make sure that you are in the mysite directory), enter:
 `python manage.pt runserver`
+
+
 
 
 

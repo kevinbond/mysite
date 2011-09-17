@@ -1,5 +1,5 @@
 To start, in the terminal, enter:
-    $django-admin.py startproject mysite
+    [$django-admin.py startproject mysite]
 
 
 This creates a directory that will have a few functions - manage the web server for development and 

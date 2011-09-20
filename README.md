@@ -8,7 +8,7 @@ direct the URL to the app.
 
 To create the physical app, in the terminal, enter:
 
-```python manage.py startapp hello```
+    python manage.py startapp hello
 
 This will create another director. 
 -----------------------------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ What this really means -> ('^hello/$', hello)
 `'^hello/$'` - This will be apart of the url to access the app.
 example - http://www.yoursite.com/hello
 
-hello - This is the name of the method that will be called inside of view.py
+`hello` - This is the name of the method that will be called inside of view.py
 
 -----------------------------------------------------------------------------------------------------------------------
 

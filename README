@@ -14,7 +14,7 @@ This will create another director.
 Files to change:
 
 urls.py:
-
+    ```py
     from django.conf.urls.defaults import *
  
     from hello.views import hello
@@ -23,7 +23,7 @@ urls.py:
     ('^hello/$', hello)
  
     )
-
+    ```
 What this really means -> ('^hello/$', hello)
 
 '^hello/$' - This will be apart of the url to access the app.

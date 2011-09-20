@@ -1,12 +1,12 @@
 To start, in the terminal, enter:
-	django-admin.py startproject mysite
+	```django-admin.py startproject mysite```
 
 
 This creates a directory that will have a few functions - manage the web server for development and 
 direct the URL to the app.
 
 To create the physical app, in the terminal, enter:
-    $python manage.py startapp hello
+    ```python manage.py startapp hello```
 
 This will create another director. 
 -----------------------------------------------------------------------------------------------------------------------
@@ -15,7 +15,7 @@ Files to change:
 
 urls.py:
 
-```js
+```py
 from django.conf.urls.defaults import *
 from hello.views import hello
 
@@ -35,7 +35,7 @@ hello - This is the name of the method that will be called inside of view.py
 
 hello/view.py:
 
-```
+```py
 # Create your views here.
 #sends information back to Tropo
 from django.http import HttpResponse  
@@ -62,7 +62,7 @@ This is the app that gets runs. Notice that the method name is hello, the same a
 -----------------------------------------------------------------------------------------------------------------------
 
 To start the development web-server, in the terminal (make sure that you are in the mysite directory), enter:
-    $python manage.pt runserver
+    ```python manage.pt runserver```
 
 
 

@@ -1,5 +1,5 @@
 To start, in the terminal, enter:
-    [$django-admin.py startproject mysite]
+    $django-admin.py startproject mysite
 
 
 This creates a directory that will have a few functions - manage the web server for development and 
@@ -15,9 +15,8 @@ Files to change:
 
 urls.py:
 
-```py
+```js
 from django.conf.urls.defaults import *
-
 from hello.views import hello
 
 urlpatterns = patterns('',
@@ -36,7 +35,7 @@ hello - This is the name of the method that will be called inside of view.py
 
 hello/view.py:
 
-```py
+```
 # Create your views here.
 #sends information back to Tropo
 from django.http import HttpResponse  

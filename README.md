@@ -1,6 +1,6 @@
 To start, in the terminal, enter:
 
-```django-admin.py startproject mysite```
+    django-admin.py startproject mysite
 
 
 This creates a directory that will have a few functions - manage the web server for development and 
@@ -17,6 +17,7 @@ This will create another director.
 Files to change:
 
 urls.py:
+--------
 
 ```py
 from django.conf.urls.defaults import *
@@ -37,6 +38,7 @@ example - http://www.yoursite.com/hello
 
 
 hello/view.py:
+-------------
 
 ```py
 # Create your views here.
@@ -66,7 +68,7 @@ This is the app that gets runs. Notice that the method name is hello, the same a
 -----------------------------------------------------------------------------------------------------------------------
 
 To start the development web-server, in the terminal (make sure that you are in the mysite directory), enter:
-    ```python manage.pt runserver```
+    python manage.pt runserver
 
 
 

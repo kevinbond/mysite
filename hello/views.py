@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 
  
-#hello was are method name called by urls.py 
+# hello is the method name called by urls.py 
 def hello(request): 
   t = Tropo()
   #This is the initial text that you want

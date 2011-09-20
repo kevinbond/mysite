@@ -1,12 +1,14 @@
 To start, in the terminal, enter:
-	```django-admin.py startproject mysite```
+
+```django-admin.py startproject mysite```
 
 
 This creates a directory that will have a few functions - manage the web server for development and 
 direct the URL to the app.
 
 To create the physical app, in the terminal, enter:
-    ```python manage.py startapp hello```
+
+```python manage.py startapp hello```
 
 This will create another director. 
 -----------------------------------------------------------------------------------------------------------------------

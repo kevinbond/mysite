@@ -27,7 +27,7 @@ urlpatterns = patterns('',
 ```
 What this really means -> ('^hello/$', hello)
 
-'^hello/$' - This will be apart of the url to access the app.
+`'^hello/$'` - This will be apart of the url to access the app.
 example - http://www.yoursite.com/hello
 
 hello - This is the name of the method that will be called inside of view.py

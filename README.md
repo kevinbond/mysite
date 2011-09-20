@@ -17,7 +17,7 @@ This will create another director.
 Files to change:
 
 urls.py:
---------
+
 
 ```py
 from django.conf.urls.defaults import *
@@ -38,7 +38,7 @@ example - http://www.yoursite.com/hello
 
 
 hello/view.py:
--------------
+
 
 ```py
 # Create your views here.

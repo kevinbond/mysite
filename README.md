@@ -68,6 +68,7 @@ This is the app that gets runs. Notice that the method name is hello, the same a
 -----------------------------------------------------------------------------------------------------------------------
 
 To start the development web-server, in the terminal (make sure that you are in the mysite directory), enter:
+    
     python manage.pt runserver
 
 
